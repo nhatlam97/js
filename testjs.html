@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Title</h1>
+	<div id="content">Content</div>
+	<div class="content">Content1</div>
+	<div class="content" style="color: blue">Content2</div>
+	<ul style="list-style: none;">
+		<li>content1</li>
+		<li>content2</li>
+		<li>content3</li>
+	</ul>
+	<div>
+		<button onclick="alert('hello lâm nè cac fen')">CLICK</button>
+	</div>	
+	<input type="text" onchange="console.log(1)" />
+	<br>
+	<img id="images"
+	 width="200" 
+	 src="https://dantricdn.com/zoom/327_245/2018/11/11/thong-trua5-15419180520532065815136.jpg" onmouseenter="document.getElementById('images').width = '500';"
+	 onmouseleave="document.getElementById('images').width = '200';">
+	 <!-- onmoueleave khi kéo chuột ra khỏi ảnh thì  ảnh trở về kích thước cũ -->
+	 <!-- onmouseenter khi kéo chuột vào ảnh thì  ảnh thay đổi kích thước -->
+		
+	<div>
+		<input type="number" id="number-1" placeholder="number1">
+		<input type="number" id="number-2" placeholder="number2">
+		<button onclick="
+		var n1 = document.getElementById('number-1').value;
+		var n2 = document.getElementById('number-2').value;
+		alert(parseInt(n1) + parseInt(n2))">
+	Cộng</button>
+	</div>
+
+	<div>
+		<input type="number" id="canh-1" placeholder="canh1">
+		<input type="number" id="canh-2" placeholder="canh2">
+		<input type="number" id="canh-3" placeholder="canh3">
+		<p id="message"></p>
+		<button onclick="check()">CHECK</button>
+	</div>
+
+	<div id="image"></div>
+	
+	<script src="main.js"></script>
+</body>
+</html>
